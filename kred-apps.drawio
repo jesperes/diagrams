@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-22T08:11:19.346Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="MjbBRhs8o-uCRXah5Dbu" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-22T08:51:17.771Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="f-PVz86p763mZ8JFEyks" version="14.4.9" type="github">
   <diagram id="3228e29e-7158-1315-38df-8450db1d8a1d" name="Page-1">
     <mxGraphModel dx="2006" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -64,8 +64,11 @@
         <mxCell id="9J0cg9gMdbM_iCFOdj_C-21548" value="external test apps" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="540" y="635" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9J0cg9gMdbM_iCFOdj_C-21556" value="tested apps = our apps -- apps_not_tested" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="630" y="50" width="120" height="80" as="geometry" />
+        <mxCell id="9J0cg9gMdbM_iCFOdj_C-21563" value="Test apps: applications used during testing&lt;br style=&quot;font-size: 18px&quot;&gt;Release apps: applications included on live systems&lt;br style=&quot;font-size: 18px&quot;&gt;Externals apps: non-Klarna owned apps&lt;br style=&quot;font-size: 18px&quot;&gt;Tested apps: all apps which are tested&lt;br&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;br&gt;Release rpm:&lt;br&gt;* &quot;make myday&quot; =&amp;gt; builds &quot;release apps&quot; with -DNOTEST&lt;br&gt;&lt;/font&gt;* &quot;make tests&quot; =&amp;gt; builds &quot;tested apps&quot; with -DTEST&lt;br&gt;&lt;br&gt;Devel rpm:&lt;br&gt;* &quot;make myday&quot; =&amp;gt; builds &quot;release apps&quot; + &quot;tested apps&quot; with -DTEST&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="721" y="129" width="440" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="9J0cg9gMdbM_iCFOdj_C-21568" value="tested apps == our apps -- (small set of apps we are not testing)&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="240" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
